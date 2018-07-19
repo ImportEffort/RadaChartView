@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.wangshijia.www.radarchartview.RadarChartView
+        android:id="@+id/radarCharView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:circleTextSpacing="8dp"
+        app:circleValueTextSize="10sp"
+        app:colorDataFill="#44ff8f4c"
+        app:colorDataStrike="@color/colorAccent"
+        app:circleValueTextColor="@color/colorAccent"
+        app:colorValueCircleFill="@android:color/white"
+        app:valueCircleStrikeWidth="1dp"
+        app:dataStrikeWidth="1dp"
+        app:drawEndCircle="true"
+        app:drawValueFill="true"
+        app:drawValueStrike="true"
+        app:gridNum="6"
+        app:gridStrikeWidth="1dp"
+        app:colorGrid="@android:color/darker_gray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:sideNum="9"
+        app:textSize="16sp"
+        app:textSpacing="10dp"/>
+
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <SeekBar
+        android:id="@+id/seekBar1"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+</android.support.constraint.ConstraintLayout>
